@@ -124,23 +124,8 @@ if PLOT:
     plt.tight_layout(); plt.show()
 
 """
-MNIST Classification with PCA + Logistic Regression in Google Colab
-==================================================================
-This notebook‑style script follows the practical pipeline required by your
-thesis while being *copy‑pastable* into a Colab notebook.  Each section is
-marked with `#@title` so Colab automatically splits it into cells.  The code
-keeps all earlier functionality (EDA plots, PCA, classifier training, metrics,
-confusion matrix, mis‑classification gallery) but drops the CLI interface and
-adds a few interactive widgets so you can change hyper‑parameters without
-editing code.
+MNIST Classification with PCA + Logistic Regression 
 
-**How to use**
---------------
-1.  Create a new notebook at <https://colab.research.google.com>.
-2.  Copy each code block (or the whole file) into a single cell and click
-    *Runtime → Run all* — Colab will split cells at every `#@title` marker.
-3.  (Optional) Toggle *SAVE_FIGURES* to `True` to export all figures under a
-    `/content/figures/` folder, ready for download.
 
 ---
 """
@@ -308,4 +293,4 @@ plt.tight_layout(); maybe_save(fig, "confusion_matrix"); plt.show()
 
 display_misclassified(X_test, y_test, y_pred)
 
-print("\nAll done! 🎉  Adjust the TEST_SIZE, VARIANCE_THRESHOLD or SAVE_FIGURES flags above and re‑run the relevant cells to iterate.")
+print("\n TEST_SIZE, VARIANCE_THRESHOLD or SAVE_FIGURES flags above and re‑run the relevant cells to iterate.")
